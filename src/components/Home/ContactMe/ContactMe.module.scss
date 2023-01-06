@@ -1,0 +1,59 @@
+.contactme{
+    gap:120px;
+    background:#EF6D58;
+    border-radius:10px;
+    height:70vh;
+    margin-top:100px;
+    padding:96px 96px;
+    >div{
+        flex:1 1 360px;
+    }
+    &__left{
+     
+       h1{
+        color:white;
+        font-size:64px;
+        line-height: 150%;
+        width:80%;      
+        }
+        p{
+            line-height: 200%;
+            font-size:15px;
+            color:white;
+            margin-top:36px;
+        }
+        button{
+            background:white;
+            color:black;
+            margin-top:40px;
+        }
+        @media (max-width:776px){
+            h1{
+                color:white;
+                font-size:56px;
+                line-height: 150%;
+                width:80%;      
+                }
+                p{
+                    line-height: 200%;
+                    font-size:15px;
+                    color:white;
+                    margin-top:36px;
+                }
+                button{
+                    background:white;
+                    color:black;
+                    margin-top:40px;
+                    width:100%;
+                }
+        }
+    }
+
+    @media (max-width:776px){
+        height:auto;
+        width:90%;
+        padding:96px 24px;
+        flex-direction: column-reverse;
+    }
+
+}

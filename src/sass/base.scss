@@ -1,0 +1,8 @@
+$bg-black:#28293E;
+
+
+@mixin phone(){
+    @media (max-width:776px){
+        @content;
+    }
+}

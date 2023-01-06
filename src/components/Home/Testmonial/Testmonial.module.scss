@@ -1,0 +1,83 @@
+.testmonial{
+    display: flex;
+    flex-direction: column;
+    max-width:1210px;
+    button{
+        margin-top:65px;
+        box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+        border-radius: 6px;
+    }
+    &__header{
+        text-align: center;
+        color:white;
+        h5 {
+            font-size:16px;
+            color:#EF6D58;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1.7px;
+            margin-bottom:20px;
+        }
+        h2{
+            font-size:64px;
+            color:white;
+            line-height: 120%;
+        }
+        @media (max-width:776px){
+            h2{
+                font-size: 40px;
+                color:white;
+                line-height: 150%;
+               
+                width:100%;
+                margin-bottom:26px;
+            }
+            button{
+                max-width: 100%;
+                width:100%;
+            }
+        }
+    }
+
+    &__content{
+        margin-top:63px;
+        &_star{
+            display:flex;
+            gap:6px;
+            img{
+                width:24px;
+            }
+        }
+   
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width:776px){
+            grid-template-columns: 1fr;
+        }
+
+
+        &_card{
+            display:flex;
+            flex-direction: column;
+            gap:46px;
+            border:1px solid #F3D1BF;
+            &_avatar{
+                display:flex;
+                gap:16px;
+
+                align-items: center;
+                div{
+                    img{
+                        max-width:80px;
+                    }
+                }
+            }
+        
+
+            background-color: white;
+            padding:50px;
+        }
+    }
+}

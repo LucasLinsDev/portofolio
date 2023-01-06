@@ -1,0 +1,40 @@
+.newsletter{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    border-top:1px solid #3A3C56;
+    border-bottom:1px solid #3A3C56;
+    &__left{
+        h3{
+            font-size:48px;
+            color:white;
+        }
+    }
+
+    &__right{
+        display:flex;
+        align-items: center;
+        gap:16px;
+        
+        input{
+            border-radius:8px;
+            width:370px;
+            padding:20px;
+            height:48px;
+            border:0px;
+            
+    @media (max-width:776px){
+        width:100%;
+    }
+        }
+        button{
+            margin:0px;
+            height:48px;
+        }
+    }
+
+    @media (max-width:776px){
+        gap:50px;
+    }
+
+}

@@ -1,0 +1,12 @@
+@import '../../sass/base.scss';
+
+.header{
+    height:100px;
+    width:100%;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 24px;
+    gap:46px;
+}

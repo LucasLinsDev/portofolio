@@ -1,0 +1,94 @@
+.portofolio{
+    display:flex;
+    flex-direction: column;
+    &__header{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+        gap:36px;
+        
+        h5 {
+            font-size:16px;
+            color:#EF6D58;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1.7px;
+            margin-bottom:20px;
+        }
+        h3{
+            font-size:56px;
+            line-height:100%;
+            color:white;
+        }
+
+            &_filter{
+                display:flex;
+                align-items: center;
+                gap:20px;
+                font-size:16px;
+                color:white;
+                font-weight: 300;
+                justify-content: center;
+                      flex-wrap: wrap;
+               
+            }
+            
+
+    }
+    
+    &__grid{
+        display:grid;   
+        width:100%;
+        max-width:1170px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin-top:96px;
+        
+        @media (max-width:1200px){
+            grid-template-columns: 1fr 1fr;
+        }
+               
+      
+        &_card{
+            
+
+            border-radius:6px;
+            max-width:370px;
+            height:416px;
+            background:red;
+            position: relative;
+
+            span{
+                position: absolute;
+                bottom:120px;
+                left:54px;
+                width: 100px;
+                height:38px;
+                background:white;
+                color:black;
+                border-radius:19px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h3{
+                position: absolute;
+                left:54px;
+                bottom:50px;
+                color:white;
+                font-size:48px;
+            }
+        }
+
+        @media (max-width:776px){
+            grid-template-columns: 1fr ;
+            &_card{
+                max-width:100%;
+                button{
+                    width:100%;
+                }
+            }
+        }
+    }
+}

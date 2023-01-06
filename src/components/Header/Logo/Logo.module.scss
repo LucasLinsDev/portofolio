@@ -1,0 +1,10 @@
+.logo{
+    img{
+        color:white;
+        cursor:pointer;
+        transition-duration:0.5s;
+        &:hover{
+            opacity:0.6;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.button_orange{
+    background-color:#EF6D58;
+    color:white;
+    font-weight: bold;
+    width: 154px;
+    height:48px;
+    border-radius:6px;
+    border:0px;
+    transition-duration: 0.5s;
+    &:hover{
+        opacity: 0.6s;
+        cursor:pointer;
+    }
+    margin-top:16px;
+    
+}
